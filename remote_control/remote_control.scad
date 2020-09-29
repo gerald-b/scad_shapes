@@ -32,7 +32,7 @@ translate([50,124,2])
     cylinder(r=13,h=hoch);
 }
 }
-for(pos = [12 : 25 : 130])
+for(pos = [12 : 27.5 : 130])
 {
     translate([-15,pos,0])
         cube([80,2 ,hoch]);
