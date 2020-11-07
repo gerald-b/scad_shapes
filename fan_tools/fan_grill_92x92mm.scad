@@ -1,0 +1,37 @@
+$fn=50;
+
+height=2;
+difference()
+{
+    minkowski()
+    {
+        cube([82,82,height]);
+        cylinder(r=5,h=height/2);
+    }
+    for(xpos=[5:4.5:79])
+    {
+        for(ypos=[5:4.5:80])
+        {
+            translate([xpos,ypos,-0.5])
+            {
+                cylinder(r=2,h=(height*3),$fn=6);
+            }
+        }
+    }
+    translate([0,0,-0.5])
+    {
+        cylinder(d=5,h=height*3);
+    }
+    translate([82,0,-0.5])
+    {
+        cylinder(d=5,h=height*3);
+    }
+    translate([0,82,-0.5])
+    {
+        cylinder(d=5,h=height*3);
+    }
+    translate([82,82,-0.5])
+    {
+        cylinder(d=5,h=height*3);
+    }
+}
