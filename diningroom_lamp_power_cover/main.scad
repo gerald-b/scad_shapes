@@ -21,4 +21,21 @@ difference()
     {
         cube([101,94,35]);
     }
+    // Screwholes
+    color("blue")
+    rotate([0,90,0])
+    {
+        translate([-25,25,-5])
+        {
+            cylinder(d=4.5,h=20);
+        }
+        translate([-25,120,-5])
+        {
+            cylinder(d=4.5,h=20);
+        }
+        translate([-25,50,125])
+        {
+            cylinder(d=4.5,h=20);
+        }
+    }
 }
