@@ -39,8 +39,8 @@ difference()
         }
     }
     // Power-out
-    translate([35,130,25])
+    translate([35,135,25])
     {
-        cube([10,10,12]);
+        cube([10,15,12]);
     }
 }
