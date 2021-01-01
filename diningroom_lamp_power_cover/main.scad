@@ -22,25 +22,31 @@ difference()
         cube([101,94,35]);
     }
     // Screwholes
+    screwholes(4.5);
+    // Power-out
+    translate([35,135,25])
+    {
+        cube([10,15,12]);
+    }
+}
+
+
+module screwholes(diameter=1)
+{
     color("blue")
     rotate([0,90,0])
     {
         translate([-25,25,-5])
         {
-            cylinder(d=4.5,h=20);
+            cylinder(d=diameter,h=20);
         }
         translate([-25,120,-5])
         {
-            cylinder(d=4.5,h=20);
+            cylinder(d=diameter,h=20);
         }
         translate([-25,50,125])
         {
-            cylinder(d=4.5,h=20);
+            cylinder(d=diameter,h=20);
         }
-    }
-    // Power-out
-    translate([35,135,25])
-    {
-        cube([10,15,12]);
     }
 }
