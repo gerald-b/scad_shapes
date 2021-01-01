@@ -1,0 +1,3 @@
+# Ignore all stl files.
+# They can reproduced via scad file
+*.stl
