@@ -3,33 +3,38 @@ $fn= 20;
 // The power cord is a little bit offset.
 // So i want to cover it.
 
-difference()
+
+boxbody();
+
+module boxbody()
 {
-    union()
+    difference()
     {
-        cube([40,170,35]);
-        translate([40,0,0])
+        union()
         {
-            cube([100,100,35]);
+            cube([40,170,35]);
+            translate([40,0,0])
+            {
+                cube([100,100,35]);
+            }
+        }
+        translate([3,3,3])
+        {
+            cube([34,164,35]);
+        }
+        translate([36,3,3])
+        {
+            cube([101,94,35]);
+        }
+        // Screwholes
+        screwholes(4.5);
+        // Power-out
+        translate([35,135,25])
+        {
+            cube([10,15,12]);
         }
     }
-    translate([3,3,3])
-    {
-        cube([34,164,35]);
-    }
-    translate([36,3,3])
-    {
-        cube([101,94,35]);
-    }
-    // Screwholes
-    screwholes(4.5);
-    // Power-out
-    translate([35,135,25])
-    {
-        cube([10,15,12]);
-    }
 }
-
 
 module screwholes(diameter=1)
 {
