@@ -38,4 +38,9 @@ difference()
             cylinder(d=4.5,h=20);
         }
     }
+    // Power-out
+    translate([35,130,25])
+    {
+        cube([10,10,12]);
+    }
 }
