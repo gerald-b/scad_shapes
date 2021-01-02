@@ -4,9 +4,23 @@ $fn= 20;
 // So i want to cover it.
 
 
-boxbody();
+// boxbody();
 
-
+color("green")
+{
+    translate([3.4,17.5,20])
+    {
+        cube([10,15,12]);
+    }
+    translate([3.4,112.5,20])
+    {
+        cube([10,15,12]);
+    }
+    translate([126.6,42.5,20])
+    {
+        cube([10,15,12]);
+    }
+}
 color("red")
 {
     translate([3.4,3.4,32])
