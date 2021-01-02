@@ -6,33 +6,37 @@ $fn= 20;
 
 // boxbody();
 
-color("green")
+difference()
 {
-    translate([3.4,17.5,20])
+    union()
     {
-        cube([10,15,12]);
+        color("red")
+        {
+            translate([3.4,3.4,32])
+            {
+                cube([33.2,163.2,3.4]);
+            }
+            translate([36,3.4,32])
+            {
+                cube([100.6,93.2,3.4]);
+            }
+        }
+        // Screwsupports
+        translate([3.4,17.5,20])
+        {
+            cube([10,15,12]);
+        }
+        translate([3.4,112.5,20])
+        {
+            cube([10,15,12]);
+        }
+        translate([126.6,42.5,20])
+        {
+            cube([10,15,12]);
+        }
     }
-    translate([3.4,112.5,20])
-    {
-        cube([10,15,12]);
-    }
-    translate([126.6,42.5,20])
-    {
-        cube([10,15,12]);
-    }
+    screwholes(3.5);
 }
-color("red")
-{
-    translate([3.4,3.4,32])
-    {
-        cube([33.2,163.2,3.4]);
-    }
-    translate([36,3.4,32])
-    {
-        cube([100.6,93.2,3.4]);
-    }
-}
-
 
 module boxbody()
 {
