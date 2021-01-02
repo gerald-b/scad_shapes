@@ -6,6 +6,20 @@ $fn= 20;
 
 boxbody();
 
+
+color("red")
+{
+    translate([3.4,3.4,32])
+    {
+        cube([33.2,163.2,3.4]);
+    }
+    translate([36,3.4,32])
+    {
+        cube([100.6,93.2,3.4]);
+    }
+}
+
+
 module boxbody()
 {
     difference()
