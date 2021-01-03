@@ -40,6 +40,7 @@ module boxbase()
             }
         }
         screwholes(3.5);
+        wallscrewholes(4.5);
     }
 }
 
@@ -69,6 +70,25 @@ module boxbody()
         translate([35,135,25])
         {
             cube([10,15,12]);
+        }
+    }
+}
+
+module wallscrewholes(diameter=1)
+{
+    color("blue")
+    {
+        translate([20,100,25])
+        {
+            cylinder(d=diameter,h=20);
+        }
+        translate([105,78,25])
+        {
+            cylinder(d=diameter,h=20);
+        }
+        translate([65,25,25])
+        {
+            cylinder(d=diameter,h=20);
         }
     }
 }
