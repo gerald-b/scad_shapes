@@ -41,6 +41,11 @@ module boxbase()
         }
         screwholes(3.5);
         wallscrewholes(4.5);
+        // Power-in
+        translate([35,33,25])
+        {
+            cube([65,35,20]);
+        }
     }
 }
 
