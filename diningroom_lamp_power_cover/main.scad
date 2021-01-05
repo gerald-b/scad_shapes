@@ -16,27 +16,27 @@ module boxbase()
         {
             color("red")
             {
-                translate([3.4,3.4,32])
+                translate([0,0,35])
                 {
-                    cube([33.2,163.2,3.4]);
+                    cube([40,170,3]);
                 }
-                translate([36,3.4,32])
+                translate([39,0,35])
                 {
-                    cube([100.6,93.2,3.4]);
+                    cube([101,100,3]);
                 }
             }
             // Screwsupports
             translate([3.4,17.5,20])
             {
-                cube([10,15,12]);
+                cube([10,15,16]);
             }
             translate([3.4,112.5,20])
             {
-                cube([10,15,12]);
+                cube([10,15,16]);
             }
             translate([126.6,42.5,20])
             {
-                cube([10,15,12]);
+                cube([10,15,16]);
             }
         }
         screwholes(3.5);
