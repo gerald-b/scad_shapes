@@ -2,7 +2,19 @@ $fn=20;
 
 difference()
 {
-    cube([34,34,2]);
+    union()
+    {
+        cube([34,34,2]);
+        translate([0,0,2])
+        {
+            cube([3,3,15]);
+        }
+        translate([31,0,2])
+        {
+            cube([3,3,15]);
+        }
+        
+    }
     for( xa=[7:10:30])
     {
         for( ya=[7:10:30])
