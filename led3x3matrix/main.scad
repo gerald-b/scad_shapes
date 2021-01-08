@@ -1,5 +1,7 @@
-$fn=20;
+$fn=200;
 
+rotate([15,0,0])
+{
 difference()
 {
     union()
@@ -25,4 +27,5 @@ difference()
             }
         }
     }
+}
 }
