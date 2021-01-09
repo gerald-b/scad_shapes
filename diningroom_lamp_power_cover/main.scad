@@ -87,11 +87,11 @@ module wallscrewholes(diameter=1)
         {
             cylinder(d=diameter,h=20);
         }
-        translate([105,78,25])
+        translate([113,83,25])
         {
             cylinder(d=diameter,h=20);
         }
-        translate([65,25,25])
+        translate([65,17,25])
         {
             cylinder(d=diameter,h=20);
         }
