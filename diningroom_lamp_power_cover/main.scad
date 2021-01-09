@@ -46,6 +46,11 @@ module boxbase()
         {
             cube([65,35,20]);
         }
+        // Power-out
+        translate([30,135,28])
+        {
+            cube([11,15,12]);
+        }
     }
 }
 
