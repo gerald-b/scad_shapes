@@ -1,0 +1,30 @@
+$fn=200;
+
+union()
+{
+    union()
+    {
+        difference()
+        {
+            cylinder(d=23.25, h=2.33);
+            translate([0,0,-3])
+                cylinder(d=7,h=10);
+        }
+        translate([-10,5,0])
+            cube([20,40,2.33]);
+    }
+    difference()
+    {
+        hull()
+        {
+            translate([0,55,0])
+                cylinder(d=7,h=2.33);
+            translate([6.5,44.5,0])
+                cylinder(d=7,h=2.33);
+            translate([-6.5,44.5,0])
+                cylinder(d=7,h=2.33);
+        }
+        translate([0,50,-3])
+            cylinder(d=7,h=10);
+    }
+}
