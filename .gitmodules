@@ -1,0 +1,3 @@
+[submodule "filament_sample_card/MCAD"]
+	path = filament_sample_card/MCAD
+	url = https://github.com/openscad/MCAD.git
