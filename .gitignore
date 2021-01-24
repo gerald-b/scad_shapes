@@ -1,3 +1,7 @@
 # Ignore all stl files.
 # They can reproduced via scad file
 *.stl
+
+# Ignore all 3mf files.
+# Special print infos where stored into extra MD file
+*.3mf
