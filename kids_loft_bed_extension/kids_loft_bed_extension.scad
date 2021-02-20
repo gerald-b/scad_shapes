@@ -1,9 +1,30 @@
 $fn=200;
 
-cube([190,5,30]);
-translate([30,0,0])
+difference()
 {
-    cube([10,180,30]);
+    cube([190,5,30]);
+    translate([15,8,15])
+    {
+        screwhole();
+    }
+    translate([175.5,8,15])
+    {
+        screwhole();
+    }
+}
+difference()
+{
+    translate([30,0,0])
+    {
+        cube([10,180,30]);
+    }
+    rotate([0,0,270])
+    {
+        translate([-165,43,15])
+        {
+            screwhole();
+        }
+    }
 }
 
 color("red")
@@ -28,6 +49,18 @@ color("red")
         translate([39,115,0])
         {
             cube([1,10,30]);
+        }
+    }
+}
+
+module screwhole()
+{
+    color("green")
+    {
+        rotate([90,0,0])
+        {
+            cylinder(d=6,h=25);
+            cylinder(d=13.5,h=5);
         }
     }
 }
