@@ -10,7 +10,7 @@ line_1_text="DasFilament PETG";
 // Line 2 (Color / Type)
 line_2_text="Transparent Rot";
 // Line 3 (Nozzle / Temp / Bed Temp)
-line_3_text=".4 / 205 / 65";
+line_3_text=".4 / 230 / 85";
 
 // Should the text be raised or inset from the Card
 text_position=1; //[1:Outset,-1:Inset]
