@@ -12,11 +12,11 @@ translate([3.75,19.5,0])
 {
     cylinder(h=3,d=5);
 }
-translate([0,23,0])
+translate([0,23.5,0])
 {
     cube([1.5,8,1.5]);
 }
-translate([6,23,0])
+translate([6,23.5,0])
 {
     cube([1.5,8,1.5]);
 }
