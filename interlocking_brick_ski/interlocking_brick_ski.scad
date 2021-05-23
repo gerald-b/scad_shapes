@@ -8,3 +8,7 @@ difference()
         cube([7.5,42,3]);
     }
 }
+translate([3.75,19.5,0])
+{
+    cylinder(h=3,d=5);
+}
