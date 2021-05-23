@@ -2,10 +2,10 @@ $fn=200;
 
 difference()
 {
-    cube([7.5,42,3]);
+    cube([7.5,44,3]);
     translate([0,0,1])
     {
-        cube([7.5,42,3]);
+        cube([7.5,44,3]);
     }
 }
 translate([3.75,19.5,0])
@@ -20,7 +20,7 @@ translate([6.5,23.5,0])
 {
     cube([1,8,1.5]);
 }
-translate([7.5,42,4])
+translate([7.5,44,4])
     rotate([0,90,180])
         skitip();
 
