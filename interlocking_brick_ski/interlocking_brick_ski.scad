@@ -23,20 +23,24 @@ translate([6.5,23.5,0])
 
 module skitip()
 {
-    difference()
+    render()
     {
-        intersection()
+        difference()
         {
-            difference()
+            intersection()
             {
-                cylinder(h=7.5, d=5);
-                cylinder(h=7.5, d=4);
+                difference()
+                {
+                    cylinder(h=7.5, d=8);
+                    translate([-1,0,0])
+                    cylinder(h=7.5, d=8);
+                }
+                translate([3.75,0,3.75])
+                {
+                    sphere(d=7.7);
+                }
             }
-            translate([3.75,0,3.75])
-            {
-                sphere(d=7.5);
-            }
+            cube(10);
         }
-        cube(10);
     }
 }
