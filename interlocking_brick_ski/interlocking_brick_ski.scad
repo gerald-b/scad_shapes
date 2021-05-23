@@ -20,3 +20,23 @@ translate([6.5,23.5,0])
 {
     cube([1,8,1.5]);
 }
+
+module skitip()
+{
+    difference()
+    {
+        intersection()
+        {
+            difference()
+            {
+                cylinder(h=7.5, d=5);
+                cylinder(h=7.5, d=4);
+            }
+            translate([3.75,0,3.75])
+            {
+                sphere(d=7.5);
+            }
+        }
+        cube(10);
+    }
+}
