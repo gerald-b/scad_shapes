@@ -2,7 +2,20 @@ $fn=200;
 
 clamp_with=50;
 
-clamp_wave();
+clamp_wave_line();
+
+module clamp_wave_line()
+{
+    difference()
+    {
+        clamp_wave();
+        translate([0,-2,0])
+        {
+            color("red")
+            clamp_wave();
+        }
+    }
+}
 
 module clamp_wave()
 {
