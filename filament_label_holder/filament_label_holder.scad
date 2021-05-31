@@ -2,11 +2,14 @@ $fn=200;
 
 clamp_with=50;
 
-clamp_wave_line();
-cube([37,2.8,clamp_with]);
-translate([-5,0,0])
+union()
 {
-    cube([5,10,clamp_with]);
+    clamp_wave_line();
+    cube([37,2.8,clamp_with]);
+    translate([-5,0,0])
+    {
+        cube([5,10,clamp_with]);
+    }
 }
 
 difference()
