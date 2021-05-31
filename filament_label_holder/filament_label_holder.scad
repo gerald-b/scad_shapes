@@ -25,6 +25,11 @@ difference()
     }
 }
 
+translate([-70,0,-10])
+{
+    cube([20,10,clamp_with+20]);
+}
+
 
 module clamp_wave_line()
 {
