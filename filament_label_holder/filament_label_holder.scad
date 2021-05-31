@@ -2,14 +2,18 @@ $fn=200;
 
 clamp_with=50;
 
+clamp_wave();
 
-union()
+module clamp_wave()
 {
-    for(i=[0:360])
+    union()
     {
-        translate([i*.1,0,0])
+        for(i=[0:360])
         {
-            cube([.1,sin(i*1.1)*5+10,clamp_with]);
+            translate([i*.1,0,0])
+            {
+                cube([.1,sin(i*1.1)*5+10,clamp_with]);
+            }
         }
     }
 }
