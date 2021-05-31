@@ -4,9 +4,9 @@ clamp_with=50;
 
 clamp_wave_line();
 cube([37,2.8,clamp_with]);
-translate([-10,0,0])
+translate([-5,0,0])
 {
-    cube([10,10,clamp_with]);
+    cube([5,10,clamp_with]);
 }
 
 difference()
