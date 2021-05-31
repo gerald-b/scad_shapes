@@ -6,13 +6,16 @@ clamp_wave_line();
 
 module clamp_wave_line()
 {
-    difference()
+    render()
     {
-        clamp_wave();
-        translate([0,-2,0])
+        difference()
         {
-            color("red")
             clamp_wave();
+            translate([0,-2,0])
+            {
+                color("red")
+                clamp_wave();
+            }
         }
     }
 }
