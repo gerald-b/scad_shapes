@@ -9,6 +9,23 @@ translate([-10,0,0])
     cube([10,10,clamp_with]);
 }
 
+difference()
+{
+    translate([-50,0,0])
+    {
+        cube([50,2.8,clamp_with]);
+    }
+
+    rotate([90,0,0])
+    {
+        translate([-30,(clamp_with/2),-10])
+        {
+            cylinder(d=32, h=30, center=true);
+        }
+    }
+}
+
+
 module clamp_wave_line()
 {
     render()
