@@ -40,6 +40,27 @@ translate([-70,0,-10])
     cube([20,10,clamp_with+20]);
 }
 
+translate([-12.75,2.25,0])
+{
+    render()
+    {
+    difference()
+    {
+        rotate([0,0,-45])
+        {
+            cube([11,11,clamp_with]);
+        }
+        translate([0,-20,0])
+        {
+            cube([20,20,clamp_with]);
+        }
+        translate([7.75,-7.5,0])
+        {
+           cube([10,20,clamp_with]);
+        }
+    }
+    }
+}
 
 module clamp_wave_line()
 {
