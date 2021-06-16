@@ -35,7 +35,7 @@ difference()
     }
 }
 
-translate([-70,0,-10])
+translate([-70,-7.25,-10])
 {
     cube([20,10,clamp_with+20]);
 }
