@@ -3,14 +3,16 @@ $fn=200;
 use <font/CATKurier.ttf>
 use <font/Lobster 1.4.otf>
 
-$txt = "Julia 23.06.1842 & + öäüß";
-$txth = 2.2;
+customText();
 
-linear_extrude(2.2)
+module customText(tContent = "Lorem Ipsum",
+            tFont = "DejaVu Sans:style=Bold",
+            tSize = 15,
+            tHeight= 5
+            )
 {
-    text($txt, 10, "Lobster 1.4");
-    translate([0,-15,0])
+    linear_extrude(tHeight)
     {
-        text("&", 10, "CATKurier");
+        text(tContent, tSize, tFont);
     }
 }
