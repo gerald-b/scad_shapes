@@ -16,3 +16,22 @@ module customText(tContent = "Lorem Ipsum",
         text(tContent, tSize, tFont);
     }
 }
+
+module heart(size = 10, height=5)
+{
+    linear_extrude(height)
+    {
+        square(size);
+        translate([size/2,0,0])
+        {
+            union()
+            {
+                circle(d=size);
+                translate([-size/2,size/2,0])
+                {
+                    circle(d=size);
+                }
+            }
+        }
+    }
+}
