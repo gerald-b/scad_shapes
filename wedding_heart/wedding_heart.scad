@@ -3,7 +3,15 @@ $fn=200;
 use <font/CATKurier.ttf>
 use <font/Lobster 1.4.otf>
 
-customText();
+// print plate size
+color("grey") cube([200,200,0.1]);
+translate([65,65,0])
+    color("red")
+        heart(135,2.5);
+
+
+
+
 
 module customText(tContent = "Lorem Ipsum",
             tFont = "DejaVu Sans:style=Bold",
