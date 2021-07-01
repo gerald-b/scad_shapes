@@ -4,12 +4,26 @@ use <font/CATKurier.ttf>
 use <font/Lobster 1.4.otf>
 
 // print plate size
-color("grey") cube([200,200,0.1]);
+// color("grey") cube([200,200,0.1]);
 translate([65,65,0])
     color("red")
         heart(135,2.5);
 
+translate([150,20,0])
+    rotate([0,0,135])
+        customText(tContent="Tamara", tFont="Lobster 1.4", tSize = 20);
 
+translate([110,98,0])
+    rotate([0,0,135])
+        customText(tContent="&", tFont="CATKurier", tSize = 20);
+
+translate([100,130,0])
+    rotate([0,0,135])
+        customText(tContent="Fabian", tFont="Lobster 1.4", tSize = 20);
+
+translate([190,125,0])
+    rotate([0,0,135])
+        customText(tContent="17.07.2021", tFont="Lobster 1.4", tSize = 15);
 
 
 
