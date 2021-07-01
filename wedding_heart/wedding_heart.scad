@@ -7,27 +7,27 @@ use <font/Lobster 1.4.otf>
 // color("grey") cube([200,200,0.1]);
 translate([65,65,0])
     color("red")
-        heart(135,2.5);
+        heart(135,5);
 
 translate([155,25,0])
     rotate([0,0,135])
-        customText(tContent="Tamara", tFont="Lobster 1.4", tSize = 18);
+        customText(tContent="Tamara", tFont="Lobster 1.4", tSize = 18, tHeight= 7);
 
 translate([95,85,0])
     rotate([0,0,135])
-        customText(tContent="&", tFont="CATKurier", tSize = 16);
+        customText(tContent="&", tFont="CATKurier", tSize = 16, tHeight= 7);
 
 translate([81,99,0])
     rotate([0,0,135])
-        customText(tContent="Fabian", tFont="Lobster 1.4", tSize = 18);
+        customText(tContent="Fabian", tFont="Lobster 1.4", tSize = 18, tHeight= 7);
 
 translate([190,140,0])
     rotate([0,0,135])
-        customText(tContent="17.07.2021", tFont="Lobster 1.4", tSize = 12);
+        customText(tContent="17.07.2021", tFont="Lobster 1.4", tSize = 12, tHeight= 7);
 
 translate([185,105,0])
     rotate([0,0,135])
-        linear_extrude(5)
+        linear_extrude(7)
             import("img/Ring-wedding-bands-clip-art-wedding-band-clip-art-and-wedding-bands.svg",dpi=55);
 
 module customText(tContent = "Lorem Ipsum",
