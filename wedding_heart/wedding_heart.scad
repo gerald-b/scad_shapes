@@ -9,21 +9,21 @@ translate([65,65,0])
     color("red")
         heart(135,2.5);
 
-translate([150,20,0])
+translate([155,25,0])
     rotate([0,0,135])
-        customText(tContent="Tamara", tFont="Lobster 1.4", tSize = 20);
+        customText(tContent="Tamara", tFont="Lobster 1.4", tSize = 18);
 
-translate([110,98,0])
+translate([95,85,0])
     rotate([0,0,135])
-        customText(tContent="&", tFont="CATKurier", tSize = 20);
+        customText(tContent="&", tFont="CATKurier", tSize = 16);
 
-translate([100,130,0])
+translate([81,99,0])
     rotate([0,0,135])
-        customText(tContent="Fabian", tFont="Lobster 1.4", tSize = 20);
+        customText(tContent="Fabian", tFont="Lobster 1.4", tSize = 18);
 
-translate([190,125,0])
+translate([190,140,0])
     rotate([0,0,135])
-        customText(tContent="17.07.2021", tFont="Lobster 1.4", tSize = 15);
+        customText(tContent="17.07.2021", tFont="Lobster 1.4", tSize = 12);
 
 
 
