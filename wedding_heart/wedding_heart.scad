@@ -11,23 +11,23 @@ translate([65,65,0])
 
 translate([155,25,0])
     rotate([0,0,135])
-        customText(tContent="Tamara", tFont="Lobster 1.4", tSize = 18, tHeight= 7);
+        customText(tContent="Tamara", tFont="Lobster 1.4", tSize = 18, tHeight= 6);
 
 translate([95,85,0])
     rotate([0,0,135])
-        customText(tContent="&", tFont="CATKurier", tSize = 16, tHeight= 7);
+        customText(tContent="&", tFont="CATKurier", tSize = 16, tHeight= 6);
 
 translate([81,99,0])
     rotate([0,0,135])
-        customText(tContent="Fabian", tFont="Lobster 1.4", tSize = 18, tHeight= 7);
+        customText(tContent="Fabian", tFont="Lobster 1.4", tSize = 18, tHeight= 6);
 
 translate([190,140,0])
     rotate([0,0,135])
-        customText(tContent="17.07.2021", tFont="Lobster 1.4", tSize = 12, tHeight= 7);
+        customText(tContent="17.07.2021", tFont="Lobster 1.4", tSize = 12, tHeight= 6);
 
 translate([185,105,0])
     rotate([0,0,135])
-        linear_extrude(7)
+        linear_extrude(6)
             import("img/Ring-wedding-bands-clip-art-wedding-band-clip-art-and-wedding-bands.svg",dpi=55);
 
 module customText(tContent = "Lorem Ipsum",
