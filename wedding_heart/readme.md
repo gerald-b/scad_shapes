@@ -5,6 +5,8 @@
 * https://www.dafont.com/de/lobster.font
 
 # Image / Clipart
-* https://clipartix.com/ring-clipart-image-12402/
- This image should be "public domain" (from the disclaimer-site)
- __Please let me know, if i had done an mistake__
+* https://clipartix.com/ring-clipart-image-12402/ 
+
+  This image should be "public domain" (from the disclaimer-site)
+ 
+  __Please let me know, if i had done an mistake__
