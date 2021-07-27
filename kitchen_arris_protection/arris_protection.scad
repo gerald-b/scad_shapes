@@ -4,7 +4,7 @@ translate([2,2,0])
     cube([11.0,6.2,8]);
 translate([15,1,0])
     cube([15.0,5.5,9]);    
-translate([31,2,0])
+translate([32,2,0])
     cube([11.0,6.2,8]);
 
 hull()
