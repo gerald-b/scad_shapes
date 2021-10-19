@@ -7,6 +7,7 @@ $fn=250;
 
 turm();
 deckel();
+displayholder();
 // color("#00ff00") 
 mcbox();
 
@@ -149,6 +150,11 @@ module deckel()
             cylinder(d=2.8,h=3);
     }
     
+
+}
+
+module displayholder()
+{
     difference()
     {
         union()
