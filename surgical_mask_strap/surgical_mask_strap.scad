@@ -1,0 +1,66 @@
+$fn=500;
+
+import("./thingiverse_4249113_Surgical_Mask_Strap_Remix.stl");
+
+translate([59.5,7.55,0])
+{
+    hang();
+}
+rotate([0,0,165.25])
+{
+    translate([56.7,21.45,0])
+    {
+        hang();
+    }
+}
+
+module hang()
+{
+color("red")
+{
+    translate([40.6,8.9,0])
+    {
+        cylinder(h=2,r=3);
+    }
+    translate([43.3,-12,0])
+    {
+        cylinder(h=2,r=3);
+    }
+    translate([43.4,-1,1])
+    {
+        rotate([0,0,7.5])
+        {
+            cube([3,21,2],center=true);
+        }
+    }
+    translate([32.4,-2.95,0.5])
+    {
+        rotate([0,0,7.5])
+        {
+            cube([25,12.42,1],center=true);
+        }
+    }
+    translate([28.7,7.25,0])
+    {
+        cylinder(h=2,r=3);
+    }
+    translate([31.4,-13.52,0])
+    {
+        cylinder(h=2,r=3);
+    }
+    translate([31.55,-2.8,1])
+    {
+        rotate([0,0,7.5])
+        {
+            cube([3,21,2],center=true);
+        }
+    }
+    translate([19.6,-4,1])
+    {
+        rotate([0,0,7.5])
+        {
+            cube([3,8,2],center=true);
+        }
+    }
+}
+}
