@@ -3,27 +3,27 @@ difference()
 {
     union()
     {
-        cube([5,150,150]);
-        cube([200,150,5]);
-        translate([0,145,0])
-            cube([200,5,150]);
+        cube([5,110,110]);
+        cube([200,110,5]);
+        translate([0,105,0])
+            cube([200,5,110]);
         translate([200,0,0])
-            cube([5,150,150]);
+            cube([5,110,110]);
     }
-    translate([-0.5,70,80])
+    translate([-0.5,45,60])
         cube([206,20,80]);
 }
 ////Print separate
 //color("red")
 //{
-//translate([0,70,80])
+//translate([-0.5,45,60])
 //    cube([206,20,20]);
 //}
 
 // Front
 difference()
 {
-    cube([200,5,150]);
+    cube([200,5,110]);
     for(a=[20:20:186])
     {
         translate([a,6,80])
