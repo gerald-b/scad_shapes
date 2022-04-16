@@ -12,11 +12,11 @@ module hookType01()
         cube([24,10,9]);
         translate([9,-1,-1])
         {
-            cube([16,8,11]);
+            cube([16,9,11]);
         }
         translate([3,2,-1])
         {
-            cube([7,5,11]);
+            cube([7,6,11]);
         }
         hookType01Hole();
     }
@@ -27,9 +27,9 @@ module hookType01Lock()
     {
         translate([9.1,-1.1,0])
         {
-            cube([15,8,9]);
+            cube([15,9,9]);
         }
-        translate([11.1,-3.1,-1])
+        translate([11.1,-2.1,-1])
         {
             cube([15,8,11]);
         }

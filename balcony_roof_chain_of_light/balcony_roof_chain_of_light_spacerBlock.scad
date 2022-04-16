@@ -9,7 +9,7 @@ difference()
     {
         cylinder(d=4.5,h=9);      
     }
-    translate([11.5,6,2])
+    translate([11.5,6,1])
     {
         cylinder(d=8,h=9,$fn=6);      
     }
@@ -17,7 +17,7 @@ difference()
     {
         cylinder(d=4.5,h=9);
     }
-    translate([27,6,2])
+    translate([27,6,1])
     {
         cylinder(d=8,h=9,$fn=6);
     }
