@@ -1,5 +1,9 @@
-$fn=250;
+$fn=50;
 
+body();
+
+module body()
+{
 difference()
 {
 // Basic cube
@@ -12,3 +16,4 @@ translate([-20,70,90]) cube([60,10,3]);
 translate([70,45,90]) cube([60,10,3]);
 }
 
+}
