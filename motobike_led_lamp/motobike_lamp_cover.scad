@@ -35,4 +35,15 @@ difference()
     translate([71,10,13])
         rotate([90,0,0])
             cylinder(d=5,h=20);
+
+    // Zip-Tie-Holes left
+    translate([-8.5,-4,13])
+        cube([4,8,10]);
+    translate([-11,-4,9])
+        cube([4,8,5]);
+    // Zip-Tie-Holes right
+    translate([69,-4,13])
+        cube([4,8,10]);
+    translate([71.5,-4,9])
+        cube([4,8,5]);
 }
