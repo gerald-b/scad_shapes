@@ -10,10 +10,10 @@ difference()
 {
     union()
     {
-    translate([-11,-7.5,0])
-        cube([10,15,20]);
+    translate([-13,-7.5,0])
+        cube([12,15,20]);
     translate([65.5,-7.5,0])
-        cube([10,15,20]);
+        cube([12,15,20]);
     translate([32.25,0,0])
         scale([1.23,1.0,1.0])
             cylinder(h=20,d=59);
@@ -39,11 +39,11 @@ difference()
     // Zip-Tie-Holes left
     translate([-8.5,-4,13])
         cube([4,8,10]);
-    translate([-11,-4,9])
-        cube([4,8,5]);
+    translate([-14,-4,9])
+        cube([7,8,5]);
     // Zip-Tie-Holes right
     translate([69,-4,13])
         cube([4,8,10]);
     translate([71.5,-4,9])
-        cube([4,8,5]);
+        cube([7,8,5]);
 }
